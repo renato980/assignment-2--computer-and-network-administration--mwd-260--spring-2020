@@ -53,6 +53,12 @@ When you’re done, do the following:
 A. Copy the contents of your global Git config settings and paste it below. Use the following command to do so: `git config --global | pbcopy`. (This assumes you’ve installed the environment profile from our class’ examples folder.)
 
 ```bash
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %fi
+filter.lfs.smudge=git-lfs smudge -- %fi
+filter.lfs.process=git-lfs process -- %fi
+user.name=renato980
+user.email=renatocolan980@gmail.com
 ```
 
 B. Place the entire contents of your pre commit hook in the included file `pre-commit`.
